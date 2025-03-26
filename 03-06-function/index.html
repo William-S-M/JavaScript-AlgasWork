@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function greet() {
+        console.log(this);
+      }
+
+      const me = {
+        name: "William",
+        greet: function () {
+          console.log(this);
+        },
+      };
+
+      function getRemaingYearsToMjaority(age) {
+        return 18 - age;
+      }
+
+      const anosFaltantes = getRemaingYearsToMjaority(9);
+    </script>
+  </body>
+</html>

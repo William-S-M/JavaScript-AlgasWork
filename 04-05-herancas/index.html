@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal {
+            sex
+        constructor (props) {
+            this.sex = props.sex
+        }    
+        }
+        class Human extends Animal {
+            hugry= true
+            name
+            age
+
+            constructor(props) {
+                super(props)
+                    if (!props.namer) {
+                    throw new Error('Name is required')}
+
+                this.name = props.namer
+                this.age = props.age 
+                this.sex = props.sex   
+                
+            }
+
+            eat() {
+                this.hugry = false
+            }
+        }
+
+        const person = new Human({
+            namer:'Pedrin',
+            age: 34,
+            sex: 'Male'
+            })
+    </script>    
+</body>
+</html>
